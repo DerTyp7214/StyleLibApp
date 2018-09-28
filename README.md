@@ -53,3 +53,5 @@ You can use this in `SwipeBackActivity` instead of the `RelativeLayout`
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 ```
+
+It extends from the Original `RelativeLayout`
