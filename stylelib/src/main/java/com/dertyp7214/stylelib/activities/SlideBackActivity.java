@@ -70,7 +70,8 @@ public class SlideBackActivity extends AppCompatActivity implements View.OnTouch
 
     public void setNewScreen(@LayoutRes int layout, @IdRes int v) {
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(
-                ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
+                RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.MATCH_PARENT);
+        layoutParams.leftMargin = width;
         ViewGroup view = findViewById(v);
         view.setLayoutParams(layoutParams);
         LayoutInflater factory = LayoutInflater.from(this);
@@ -83,7 +84,6 @@ public class SlideBackActivity extends AppCompatActivity implements View.OnTouch
     @SuppressLint("ClickableViewAccessibility")
     public boolean onTouch(View v, MotionEvent event) {
         final int X = (int) event.getRawX();
-        final int Y = (int) event.getRawY();
         switch (event.getAction() & MotionEvent.ACTION_MASK) {
             case MotionEvent.ACTION_DOWN:
                 RelativeLayout.LayoutParams lParams =
