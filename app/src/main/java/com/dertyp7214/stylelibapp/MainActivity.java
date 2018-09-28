@@ -2,7 +2,7 @@ package com.dertyp7214.stylelibapp;
 
 import android.os.Bundle;
 
-import com.dertyp7214.stylelib.activties.SlideBackActivity;
+import com.dertyp7214.stylelib.activities.SlideBackActivity;
 
 public class MainActivity extends SlideBackActivity {
 

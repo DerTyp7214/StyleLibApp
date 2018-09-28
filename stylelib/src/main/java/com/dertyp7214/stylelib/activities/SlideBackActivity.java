@@ -1,4 +1,4 @@
-package com.dertyp7214.stylelib.activties;
+package com.dertyp7214.stylelib.activities;
 
 import android.animation.ValueAnimator;
 import android.annotation.SuppressLint;
